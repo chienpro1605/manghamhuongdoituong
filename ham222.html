@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyện tập hàm 2</title>
+</head>
+<body>
+<!--<script>
+    function isPrime(n){
+        let prime = true;
+        if (n<2){
+            prime = false;
+        }else {
+            for (let i = 2; i<n; i++){
+                if (n%i==0){
+                    prime=false;
+                    break;
+                }
+            }
+        }
+        if (prime==true){
+            document.write(n + " là số nguyên tố");
+        }else {
+            document.write(n + " không phải số nguyên tố");
+        }
+    }
+    isPrime(prompt("nhập vào số nguyên n:"));
+
+
+</script>bài tập chuyển đổi giữa feet và metter-->
+
+<!--<script>
+    function footToMeter(metter){
+        let feet = 3.279*metter;
+        document.write(feet);
+    }
+    footToMeter(+prompt("nhập số metter vào: "));
+</script>bài tập luyện tập sử dụng hàm (bài 1)-->
+<!--<script>
+    function alertMessage(){
+        alert("xin chào");
+    }
+    alertMessage();
+</script>(bài 2)-->
+<!--<script>
+    function addNumber(x){
+        if (x+=1){
+            document.write(x);
+        }
+    }
+    addNumber(+prompt("nhập 1 số vào"));
+</script>(bài 3)-->
+<!--<script>
+    function twoNumber(x, y){
+        if (x>y){
+            alert("số thứ nhất lớn hơn số thứ 2");
+        }else {
+            document.write(x+y);
+        }
+    }
+    twoNumber(+prompt("số thứ nhất"), +prompt("số thứ 2"));
+</script>(bài 4)-->
+<!--<script>
+    function addNumbers() {
+       let firstNum = 4;
+       let secondNum = 8;
+       result = firstNum + secondNum;
+        alert(result);
+    }
+    addNumbers();
+
+
+</script>(bài 5)-->
+<!--<script>
+    let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let groupstar = ["Ursa", "Tarurus", "Cygnus", "Lyra", "Aquila", "Um", "Leo"];
+    function seacStar(s){
+        for(let i =0; i<star.length; i++){
+            for (let j=0; j<groupstar.length;j++){
+                if (s===star[i]){
+                    alert(groupstar[j]);
+                    return
+                }else {
+                    document.write("k");
+                   return
+                }
+            }
+        }
+    }
+    seacStar(prompt("nhập vào"));
+</script>(bài tập luyện hàm 2)(bài 1)-->
+<!--<script>
+    function tinh_binh_phuong(x){
+        let a= x*x;
+        document.write(a);
+    }
+    tinh_binh_phuong(+prompt("nhập số cần tính"));
+</script>(bài 2)-->
+<!--<script>
+    function tinh_dientich(r){
+        let s = 3.14*r*r;
+        document.write(s);
+    }
+    tinh_dientich(+prompt("nhập bán kính vào"));
+</script>(bài 3)-->
+<!--<script>
+    function tinh_giaithua(a){
+        if (a<0)
+            return "underfined";
+        let s = 1;
+        for (let i =1; i<=a; i++)
+            s*=i;
+        alert(s);
+    }
+    tinh_giaithua(+prompt("nhập số cần giai thừa"));
+</script>(bài 4)-->
+<!--<script>
+    function checkNumber(x){
+        if (x>=0)
+            document.write("true");
+        else
+            document.write("false");
+    }
+    checkNumber(prompt("viết gì đó"));
+</script>(bài 5)-->
+<!--<script>
+    function timMax(x,y,z){
+        if (x<y & x<z)
+            document.write(x + " là số nguyên nhỏ nhất");
+        if(y<x & y<z)
+            document.write(y + " là số nguyên nhỏ nhất");
+        if(z<y & z<x)
+            document.write(z + " là số nguyên nhỏ nhất");
+    }
+    timMax(+prompt("số thứ nhất"), +prompt("số thứ hai"), prompt("số thứ ba"));
+</script>(bài 6)-->
+<!--<script>
+    function checkNumber(x){
+        if (x>0)
+            document.write(x + " là số nuyên dương");
+        else
+            document.write(x + " không phải là số nguyên dương");
+    }
+    checkNumber(parseInt(prompt("nhập số vào")));
+</script>(bài 7)-->
+<!--<script>
+    function doicho(x, y){
+
+        document.write(y+ " ,"+x);
+    }
+    doicho(parseInt(prompt("x")), parseInt(prompt("y")));
+</script>(bài 8)-->
+<!--<script>
+    function chuyen_mang(x){
+        let arrs = [1,4,6,7,9,0,23,46,78];
+        arrs.reverse();
+        arrs.push(x);
+        document.write(arrs);
+    }
+    chuyen_mang(+prompt("nhập số nguyên bất kỳ"));
+</script>(bài 9)-->
+<script>
+    let arr = ['1','a','b','1'];
+    let c = prompt('Nhap vao: ');
+    function count(mang, kitu) {
+        let count = 0;
+        for (let i=0; i<=arr.length;i++) {
+            if (kitu == mang[i]) {
+                count++;
+            }
+        }
+        if( count>0) {
+            return count;
+        } else {
+            return -1;
+        }
+    }
+    document.write(count(arr,c));
+</script>
+</body>
+</html>
