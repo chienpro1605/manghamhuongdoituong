@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyện tập mảng 1</title>
+</head>
+<body>
+  <!--<script>(bài 1:)
+      let count = 1;
+      let a= [6,8,19,56,3,5,38,89,4,7];
+      for (let i = 0; i<a.length; i++){
+          let x = a[i];
+          if (x>=10){
+              document.write(a[i] + "<br>");
+             count++;
+          }
+      }
+      document.write("số lượng số là" + count);
+  </script>bài 2:-->
+<!--<script>
+    let arrs= [1,6,8,3,89,4,5,9,45,10];
+    let max = arrs[0];
+    let index = 1;
+    for (let i = 1; i<arrs.length; i++){
+        if (arrs[i]>max){
+            max=arrs[i];
+            index = i;
+
+        }
+    }
+    alert(max +"ở vị trí" + index);
+</script>bài 3:-->
+<!--<script>
+    let songuyen = [1,2,3,4,5,6,12,34,8];
+    let max = songuyen[0];
+    let aver = +songuyen[0];
+    for (let i = 0; i<songuyen.length-1; i++){
+        if (max<songuyen[i]){
+            max=songuyen[i];
+
+        }
+        aver += songuyen[i];
+    }
+    document.write(max + '<br>');
+    document.write(aver/9);
+  </script>(bài 4)-->
+<!--<script>
+    let arrs=[1,2,3,4,5,6,7,8,9];
+    arrs.reverse();
+    document.write(arrs);
+</script>(bài 5:)-->
+<!--<script>-->
+<!--    let a = [1, 2, -4, 6, 10, -13, 54, 58, -48, 42, -49, -45];-->
+<!--    let count=0-->
+<!--    for ( let i =0; i < a.length; i++){-->
+<!--    if( a[i]<0){-->
+<!--            count++;-->
+<!--      }-->
+<!--    }-->
+<!--    document.write( 'Có tất cả ' +count + ' Số âm')-->
+<!--</script>-->
+<!--<script>
+    let a =[1,2,3,4,5,6,7,8,9,10];
+    let v = +prompt("nhập v vào đây");
+    for (let i = 0; i<a.length-1;i++){
+        if (v===a[i]){
+            alert("v is in the Array");
+
+        }else{
+            alert("v not array");
+
+        }
+    }
+</script>
+<!<script>
+    let a =[1,2,3,4,5,6,7,8,9,10];
+    let v = +prompt("nhập v vào đây");
+    for (let i = 0; i<a.length-1;i++){
+        if (v===a[i]){
+            a.splice(i,1);
+        }
+    }
+    alert(a);
+</script>bài 8:-->
+<!--<script>
+    var points = [40, 100, 1, 5, 25, 10];
+    points.sort(function(a, b){return b - a});
+    document.write(points);
+</script>(bài 9);-->
+<!--<script>-->
+<!--    let a = [1, 2, 4, 6, 10, 13, 54, 58, 48, 42, 49, 45, 43];-->
+<!--    let b = [3, 9, 5, 11, 15, 12, 34, 38, 28, 22, 39, 35, 23];-->
+<!--    let c-->
+<!--    c=a.concat(b)-->
+<!--    document.write( c)-->
+<!--</script>(sử dụng các hàm có sẵn của mảng bài 1:)-->
+<!--<script>
+    let myColor = ["Red", "Green", "White", "Black"];
+    console.log(myColor.join());
+</script>(bài 2)-->
+<script>
+    let num=window.prompt();
+    let str = num.toString();
+    let result = [str[0]];
+
+    for(let x=1; x<str.length; x++)
+    {
+        if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+        {
+            result.push('-', str[x]);
+        }
+        else
+        {
+            result.push(str[x]);
+        }
+    }
+    console.log(result.join(''));
+</script>
+</body>
+</html>
