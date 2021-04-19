@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>từ điển</title>
+</head>
+<body>
+<input type="text" id="word">
+<input type="button" value="seach" onclick="timkiem()"><br><br>
+<input type="text"  id="vietnam">
+<script>
+    let english = ['hello', 'goodbye', "computer"];
+    let vietnamese = ['xin chao', 'tạm biệt', 'máy tính'];
+    function timkiem(){
+        let a = document.getElementById("word").value;
+        for (let i =0; i<english.length; i++){
+            if (a === english[i]){
+                document.getElementById("vietnam").value=vietnamese[i];
+            }
+        }
+    }
+</script>
+</body>
+</html>
