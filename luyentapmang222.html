@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyện tập mảng 2</title>
+</head>
+<body>
+<!--<script>(bài 1:)
+    let a = [
+        [1, 2, 1, 24],
+        [8, 11, 9, 4],
+        [7, 0, 7, 27],
+        [7, 4, 28, 14],
+        [3, 10, 26, 7]
+    ];
+    for (i=0;i<a.length;i++){
+        document.write("row "+ i +"<br/>");
+        for (j=0;j<a[i].length;j++){
+            document.write(a[i][j] +"<br/>");
+        }
+    }
+
+</script>(bài 2)-->
+<!--<script>
+    let array =  [ 'c', 's', 'c', '2', '6', '1' ];
+    array.reverse();
+    let text = array.join("") ;
+    document.write('"'+text+'"');
+</script>
+ <script>
+    let array = [];
+    let count = 0;
+    let max = prompt("Nhập kích thước của mảng : ");
+    for (i=0;i<max;i++){
+        let a = prompt("Nhập phần tử : ");
+        array.push(a);
+        if (array[i]>=0){
+            count++;
+        }
+    }
+    document.write("Số ký tự số trong mảng là : "+count);
+</script>-->
+<!--<script>
+    let a = '123df';
+    let b = [1,2,3,4,5,6,7,8,9];
+    let count = 0;
+
+    for (let i = 0; i<a.length; i++){
+       for(let j = 0; j<b.length; j++){
+           if (a[i]==b[j]){
+               count++;
+           }
+       }
+    }
+    document.write("số ký tự là"+ count);
+
+</script>bài 5:-->
+<!--<script>
+    let str1 = prompt("nhập vào chuỗi 1");
+    let str2 = prompt("nhập vào chuỗi 2");
+    if (str1.length==str2.length){
+        for (let i=0; i<str1.length; i++){
+            if (str1[i]==str2[i]){
+                document.write("hai chuỗi giống nhau");
+                break;
+            }else {
+                document.write("hai chuỗi k giống nhau");
+                break;
+            }
+        }
+    }else{
+        document.write("k so sánh đc");
+    }
+
+
+</script>(bài 6)-->
+<script>
+    let a = ["-", "%","v","c"];
+    for (let i =0; i<a.length; i++){
+        if (a[i]==="-"){
+            document.write("Ký tự"+a[i]+"tại vị trí"+i);
+            a[i] = "_"
+
+        }
+    }
+
+    document.write(a);
+</script>
+</body>
+</html>
